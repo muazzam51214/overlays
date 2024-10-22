@@ -13,7 +13,7 @@ const productSchema = new Schema(
     },
 
     productImage: {
-      type: [String], // Array of Cloudinary URLs
+      type: [String],
       required: [true, "At least one productImage is required"],
     },
 
