@@ -26,13 +26,6 @@ const userSchema = new Schema(
       default: "user",
     },
 
-    orders: [
-      {
-        type: Schema.Types.ObjectId,
-        ref: "Order",
-      },
-    ],
-
     password: {
       type: String,
       required: [true, "Password is required"],

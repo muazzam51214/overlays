@@ -65,6 +65,12 @@ const orderSchema = new Schema(
       required: [true, "Total amount is required"],
     },
 
+    paymentMethod: {
+      type: String,
+      enum: ["Credit Card", "Cash On Delivery", "Bank Transfer"],
+      default: "Cash On Delivery",
+    },
+
     status: {
       type: String,
       enum: ["Processing", "Shipped", "Delivered", "Cancelled"],
